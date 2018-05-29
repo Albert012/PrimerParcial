@@ -1,0 +1,4 @@
+CREATE DATABASE PrimerParcialDB
+GO
+USE PrimerParcialDB
+GO

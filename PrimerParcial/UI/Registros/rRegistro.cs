@@ -7,11 +7,11 @@ using System.Linq;
 using System.Text;
 using System.Windows.Forms;
 
-namespace PrimerParcial
+namespace PrimerParcial.UI.Registros
 {
-    public partial class Form1 : Form
+    public partial class rRegistro : Form
     {
-        public Form1()
+        public rRegistro()
         {
             InitializeComponent();
         }
