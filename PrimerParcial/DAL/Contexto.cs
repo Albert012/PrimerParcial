@@ -8,7 +8,7 @@ namespace PrimerParcial.DAL
 {
     public class Contexto : DbContext
     {
-        public DbSet<> MyProperty { get; set; }
+        //public DbSet<> MyProperty { get; set; }
 
         public Contexto() : base("ConStr")
         {

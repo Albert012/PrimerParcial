@@ -32,5 +32,11 @@ namespace PrimerParcial
             consulta.MdiParent = this.MdiParent;
             consulta.ShowDialog();
         }
+
+        private void salirToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Esperamos Que Vuelva!!", "Salida Del Sistema", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            this.Close();
+        }
     }
 }

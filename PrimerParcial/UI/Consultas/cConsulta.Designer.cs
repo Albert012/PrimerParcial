@@ -29,6 +29,7 @@
         private void InitializeComponent()
         {
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.Consultar_button = new System.Windows.Forms.Button();
             this.Criterio_textBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.Filtro_comboBox = new System.Windows.Forms.ComboBox();
@@ -40,7 +41,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.Imprimir_button = new System.Windows.Forms.Button();
-            this.Consultar_button = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -61,6 +61,17 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Opcion De Consulta";
+            // 
+            // Consultar_button
+            // 
+            this.Consultar_button.BackColor = System.Drawing.Color.Transparent;
+            this.Consultar_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.Consultar_button.Image = global::PrimerParcial.Properties.Resources.find;
+            this.Consultar_button.Location = new System.Drawing.Point(596, 17);
+            this.Consultar_button.Name = "Consultar_button";
+            this.Consultar_button.Size = new System.Drawing.Size(41, 38);
+            this.Consultar_button.TabIndex = 4;
+            this.Consultar_button.UseVisualStyleBackColor = false;
             // 
             // Criterio_textBox
             // 
@@ -86,6 +97,8 @@
             this.Filtro_comboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.Filtro_comboBox.Font = new System.Drawing.Font("Times New Roman", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Filtro_comboBox.FormattingEnabled = true;
+            this.Filtro_comboBox.Items.AddRange(new object[] {
+            "Todos"});
             this.Filtro_comboBox.Location = new System.Drawing.Point(65, 25);
             this.Filtro_comboBox.Name = "Filtro_comboBox";
             this.Filtro_comboBox.Size = new System.Drawing.Size(149, 23);
@@ -171,17 +184,6 @@
             this.Imprimir_button.Size = new System.Drawing.Size(45, 37);
             this.Imprimir_button.TabIndex = 3;
             this.Imprimir_button.UseVisualStyleBackColor = true;
-            // 
-            // Consultar_button
-            // 
-            this.Consultar_button.BackColor = System.Drawing.Color.Transparent;
-            this.Consultar_button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.Consultar_button.Image = global::PrimerParcial.Properties.Resources.find;
-            this.Consultar_button.Location = new System.Drawing.Point(596, 17);
-            this.Consultar_button.Name = "Consultar_button";
-            this.Consultar_button.Size = new System.Drawing.Size(41, 38);
-            this.Consultar_button.TabIndex = 4;
-            this.Consultar_button.UseVisualStyleBackColor = false;
             // 
             // cConsulta
             // 
