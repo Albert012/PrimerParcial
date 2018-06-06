@@ -248,6 +248,7 @@
             // integrantesNumericUpDown
             // 
             this.integrantesNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "Integrantes", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
+            this.integrantesNumericUpDown.Enabled = false;
             this.integrantesNumericUpDown.Location = new System.Drawing.Point(124, 241);
             this.integrantesNumericUpDown.Name = "integrantesNumericUpDown";
             this.integrantesNumericUpDown.ReadOnly = true;

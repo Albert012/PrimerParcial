@@ -132,24 +132,16 @@ namespace PrimerParcial.UI.Registros
 
         private void grupoNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
-            if(cantidadNumericUpDown.Value != 0)
+            if (cantidadNumericUpDown.Value != 0 && grupoNumericUpDown.Value != 0)
             {
-                CalcularIntegrantes();
+                integrantesNumericUpDown.Value = BLL.GruposBLL.CalcularIntegrantes(cantidadNumericUpDown.Value,grupoNumericUpDown.Value);
+                
             }
+            
            
           
         }
-
-        //para calcular cantidad de integrantes pero despues de guardar
-        private void CalcularIntegrantes()
-        {
-            int integrantes, cant = Convert.ToInt32(cantidadNumericUpDown.Value), grp = Convert.ToInt32(grupoNumericUpDown.Value);
-                        
-            integrantes = cant / grp;
-
-            integrantesNumericUpDown.Value = integrantes;
-            
-        }
+        
 
         private void integrantesNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
@@ -169,10 +161,12 @@ namespace PrimerParcial.UI.Registros
         private void cantidadNumericUpDown_ValueChanged(object sender, EventArgs e)
         {
 
-            if (grupoNumericUpDown.Value != 0)
+            if (cantidadNumericUpDown.Value != 0 && grupoNumericUpDown.Value != 0)
             {
-                CalcularIntegrantes();
+                integrantesNumericUpDown.Value = BLL.GruposBLL.CalcularIntegrantes(cantidadNumericUpDown.Value, grupoNumericUpDown.Value);
+
             }
+
         }
     }
 }

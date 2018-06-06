@@ -153,5 +153,10 @@ namespace PrimerParcial.BLL
             return grupos;
         }
 
+
+        public static Decimal CalcularIntegrantes(Decimal cantidad, Decimal grupo)
+        {
+            return cantidad / grupo;
+        }
     }
 }
