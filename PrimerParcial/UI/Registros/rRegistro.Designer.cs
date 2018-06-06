@@ -71,7 +71,7 @@
             grupoIdLabel.AutoSize = true;
             grupoIdLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             grupoIdLabel.ForeColor = System.Drawing.SystemColors.Control;
-            grupoIdLabel.Location = new System.Drawing.Point(21, 85);
+            grupoIdLabel.Location = new System.Drawing.Point(41, 89);
             grupoIdLabel.Name = "grupoIdLabel";
             grupoIdLabel.Size = new System.Drawing.Size(71, 16);
             grupoIdLabel.TabIndex = 3;
@@ -82,7 +82,7 @@
             fechaLabel.AutoSize = true;
             fechaLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             fechaLabel.ForeColor = System.Drawing.SystemColors.Control;
-            fechaLabel.Location = new System.Drawing.Point(32, 123);
+            fechaLabel.Location = new System.Drawing.Point(60, 123);
             fechaLabel.Name = "fechaLabel";
             fechaLabel.Size = new System.Drawing.Size(55, 16);
             fechaLabel.TabIndex = 5;
@@ -93,7 +93,7 @@
             descripcionLabel.AutoSize = true;
             descripcionLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             descripcionLabel.ForeColor = System.Drawing.SystemColors.Control;
-            descripcionLabel.Location = new System.Drawing.Point(6, 161);
+            descripcionLabel.Location = new System.Drawing.Point(26, 161);
             descripcionLabel.Name = "descripcionLabel";
             descripcionLabel.Size = new System.Drawing.Size(95, 16);
             descripcionLabel.TabIndex = 7;
@@ -104,7 +104,7 @@
             integrantesLabel.AutoSize = true;
             integrantesLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             integrantesLabel.ForeColor = System.Drawing.SystemColors.Control;
-            integrantesLabel.Location = new System.Drawing.Point(-2, 241);
+            integrantesLabel.Location = new System.Drawing.Point(23, 241);
             integrantesLabel.Name = "integrantesLabel";
             integrantesLabel.Size = new System.Drawing.Size(89, 16);
             integrantesLabel.TabIndex = 13;
@@ -115,7 +115,7 @@
             cantidadLabel.AutoSize = true;
             cantidadLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             cantidadLabel.ForeColor = System.Drawing.SystemColors.Control;
-            cantidadLabel.Location = new System.Drawing.Point(21, 202);
+            cantidadLabel.Location = new System.Drawing.Point(41, 202);
             cantidadLabel.Name = "cantidadLabel";
             cantidadLabel.Size = new System.Drawing.Size(74, 16);
             cantidadLabel.TabIndex = 14;
@@ -126,7 +126,7 @@
             grupoLabel.AutoSize = true;
             grupoLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             grupoLabel.ForeColor = System.Drawing.SystemColors.Control;
-            grupoLabel.Location = new System.Drawing.Point(230, 202);
+            grupoLabel.Location = new System.Drawing.Point(250, 202);
             grupoLabel.Name = "grupoLabel";
             grupoLabel.Size = new System.Drawing.Size(54, 16);
             grupoLabel.TabIndex = 15;
@@ -149,13 +149,14 @@
             // 
             // Eliminar_button
             // 
+            this.Eliminar_button.BackColor = System.Drawing.Color.Transparent;
             this.Eliminar_button.ForeColor = System.Drawing.SystemColors.ControlText;
             this.Eliminar_button.Image = global::PrimerParcial.Properties.Resources.Delete;
             this.Eliminar_button.Location = new System.Drawing.Point(176, 22);
             this.Eliminar_button.Name = "Eliminar_button";
             this.Eliminar_button.Size = new System.Drawing.Size(46, 42);
             this.Eliminar_button.TabIndex = 2;
-            this.Eliminar_button.UseVisualStyleBackColor = true;
+            this.Eliminar_button.UseVisualStyleBackColor = false;
             this.Eliminar_button.Click += new System.EventHandler(this.Eliminar_button_Click);
             // 
             // Nuevo_button
@@ -174,7 +175,7 @@
             this.Guardar_button.Location = new System.Drawing.Point(111, 22);
             this.Guardar_button.Name = "Guardar_button";
             this.Guardar_button.Size = new System.Drawing.Size(46, 42);
-            this.Guardar_button.TabIndex = 0;
+            this.Guardar_button.TabIndex = 1;
             this.Guardar_button.UseVisualStyleBackColor = true;
             this.Guardar_button.Click += new System.EventHandler(this.Guardar_button_Click);
             // 
@@ -208,7 +209,7 @@
             // Buscar_button
             // 
             this.Buscar_button.Image = global::PrimerParcial.Properties.Resources.find;
-            this.Buscar_button.Location = new System.Drawing.Point(241, 74);
+            this.Buscar_button.Location = new System.Drawing.Point(261, 74);
             this.Buscar_button.Name = "Buscar_button";
             this.Buscar_button.Size = new System.Drawing.Size(34, 35);
             this.Buscar_button.TabIndex = 3;
@@ -218,7 +219,7 @@
             // grupoIdNumericUpDown
             // 
             this.grupoIdNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "GrupoId", true));
-            this.grupoIdNumericUpDown.Location = new System.Drawing.Point(104, 85);
+            this.grupoIdNumericUpDown.Location = new System.Drawing.Point(124, 85);
             this.grupoIdNumericUpDown.Name = "grupoIdNumericUpDown";
             this.grupoIdNumericUpDown.Size = new System.Drawing.Size(120, 20);
             this.grupoIdNumericUpDown.TabIndex = 4;
@@ -231,46 +232,46 @@
             // 
             this.fechaDateTimePicker.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "Fecha", true));
             this.fechaDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.fechaDateTimePicker.Location = new System.Drawing.Point(104, 119);
+            this.fechaDateTimePicker.Location = new System.Drawing.Point(124, 119);
             this.fechaDateTimePicker.Name = "fechaDateTimePicker";
             this.fechaDateTimePicker.Size = new System.Drawing.Size(120, 20);
-            this.fechaDateTimePicker.TabIndex = 6;
+            this.fechaDateTimePicker.TabIndex = 0;
             // 
             // descripcionTextBox
             // 
             this.descripcionTextBox.DataBindings.Add(new System.Windows.Forms.Binding("Text", this.gruposBindingSource, "Descripcion", true));
-            this.descripcionTextBox.Location = new System.Drawing.Point(104, 158);
+            this.descripcionTextBox.Location = new System.Drawing.Point(124, 158);
             this.descripcionTextBox.Name = "descripcionTextBox";
             this.descripcionTextBox.Size = new System.Drawing.Size(307, 20);
-            this.descripcionTextBox.TabIndex = 8;
+            this.descripcionTextBox.TabIndex = 1;
             // 
             // integrantesNumericUpDown
             // 
             this.integrantesNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "Integrantes", true, System.Windows.Forms.DataSourceUpdateMode.OnValidation, null, "N2"));
-            this.integrantesNumericUpDown.Location = new System.Drawing.Point(104, 241);
+            this.integrantesNumericUpDown.Location = new System.Drawing.Point(124, 241);
             this.integrantesNumericUpDown.Name = "integrantesNumericUpDown";
             this.integrantesNumericUpDown.ReadOnly = true;
             this.integrantesNumericUpDown.Size = new System.Drawing.Size(110, 20);
-            this.integrantesNumericUpDown.TabIndex = 14;
+            this.integrantesNumericUpDown.TabIndex = 4;
             this.integrantesNumericUpDown.ValueChanged += new System.EventHandler(this.integrantesNumericUpDown_ValueChanged);
             this.integrantesNumericUpDown.VisibleChanged += new System.EventHandler(this.integrantesNumericUpDown_VisibleChanged);
             // 
             // cantidadNumericUpDown
             // 
             this.cantidadNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "Cantidad", true));
-            this.cantidadNumericUpDown.Location = new System.Drawing.Point(104, 201);
+            this.cantidadNumericUpDown.Location = new System.Drawing.Point(124, 201);
             this.cantidadNumericUpDown.Name = "cantidadNumericUpDown";
             this.cantidadNumericUpDown.Size = new System.Drawing.Size(110, 20);
-            this.cantidadNumericUpDown.TabIndex = 15;
+            this.cantidadNumericUpDown.TabIndex = 2;
             this.cantidadNumericUpDown.ValueChanged += new System.EventHandler(this.cantidadNumericUpDown_ValueChanged);
             // 
             // grupoNumericUpDown
             // 
             this.grupoNumericUpDown.DataBindings.Add(new System.Windows.Forms.Binding("Value", this.gruposBindingSource, "Grupo", true));
-            this.grupoNumericUpDown.Location = new System.Drawing.Point(291, 199);
+            this.grupoNumericUpDown.Location = new System.Drawing.Point(311, 199);
             this.grupoNumericUpDown.Name = "grupoNumericUpDown";
             this.grupoNumericUpDown.Size = new System.Drawing.Size(120, 20);
-            this.grupoNumericUpDown.TabIndex = 16;
+            this.grupoNumericUpDown.TabIndex = 3;
             this.grupoNumericUpDown.ValueChanged += new System.EventHandler(this.grupoNumericUpDown_ValueChanged);
             // 
             // rRegistro

@@ -26,11 +26,11 @@ namespace PrimerParcial.UI.Consultas
             switch(Filtro_comboBox.SelectedIndex)
             {
                 case 0://Buscar Sin Filtro
-                    //filtro = g => g.Fecha >= Desde_dateTimePicker.Value.Date && g.Fecha <= Hasta_dateTimePicker.Value.Date;
+                    filtro = g => g.Fecha >= Desde_dateTimePicker.Value.Date && g.Fecha <= Hasta_dateTimePicker.Value.Date;
                     break;
                 case 1://GrupoId
                     id = Convert.ToInt32(Criterio_textBox.Text);
-                    filtro = g => (g.GrupoId == id) && (g.Fecha >= Desde_dateTimePicker.Value.Date && g.Fecha <= Hasta_dateTimePicker.Value.Date);
+                    filtro = g => (g.GrupoId.Equals(id)) && (g.Fecha >= Desde_dateTimePicker.Value.Date && g.Fecha <= Hasta_dateTimePicker.Value.Date);
                     break;
                 case 2://Descripcion
                     filtro = g => (g.Descripcion.Contains(Criterio_textBox.Text)) && (g.Fecha >= Desde_dateTimePicker.Value.Date && g.Fecha <= Hasta_dateTimePicker.Value.Date);
